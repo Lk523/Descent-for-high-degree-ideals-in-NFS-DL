@@ -1,0 +1,126 @@
+Working in GF(p), p=191907783019725260605646959711
+Subgroup considered in GF(p)^* has size 101538509534246169632617439
+prefix is p30
+Bad ideal information loaded: 0 bad ideals, and 0 lines in badidealinfo
+badideal data: []
+--- Reading /opt/tmp/work20827/p30.dlog to find which are the known logs ---
+Reading line 0
+Found 0 bad ideals, 899 known logs, and 0,1 SMs in /opt/tmp/work20827/p30.dlog
+Consistency check for las_descent passed
+	I=10
+	lim0=1900
+	lim1=1900
+command line:
+/home/mao/loria/cado-nfs/build/hp/misc/descent_init_Fp -poly /opt/tmp/work20827/p30.poly -mt 4 -minB1 200 -mineff 1000 -maxeff 100000 -side 1 -target 22 -seed 42 -jl 191907783019725260605646959711 92800609832959449330691138186
+running program, saving output to /opt/tmp/work20827/p30.descent.9280060983...0691138186.upper.init
+Waiting for child to finish
+ok, done
+[[29, 9], [347, 160], [56249, 4303], [119687, 41769]]
+[[3, 0], [650291, 435235], [4163899, 3919238]]
+Will do further descent for 16-bit prime 56249
+Will do further descent for 17-bit prime 119687
+Will do further descent for 20-bit prime 650291
+Will do further descent for 22-bit prime 4163899
+--- Sieving (middle, 4 rational primes) ---
+command line:
+/home/mao/loria/cado-nfs/build/hp/sieve/las_descent --recursive-descent --allow-largesq --never-discard --renumber /opt/tmp/work20827/p30.renumber.gz --log /opt/tmp/work20827/p30.dlog --fb1 /opt/tmp/work20827/p30.roots1.gz --poly /opt/tmp/work20827/p30.poly --fb0 /opt/tmp/work20827/p30.roots0.gz --descent-hint-table ./parameters/dlp/p30.hint --I 10 --lim0 1900 --lim1 1900 --lpb0 12 --mfb0 24 --lpb1 11 --mfb1 22 -t 4 --todo /opt/tmp/work20827/p30.descent.9280060983...0691138186.upper.todo
+running program, saving output to /opt/tmp/work20827/p30.descent.9280060983...0691138186.middle.rels
+# taking path: 16@1 -> done 	1 56249 4303
+
+# 16@1 [1.7993]		1 56249 4303
+
+# taking path: 17@1 -> done 	1 119687 41769
+
+# 17@1 [0.0335]		1 119687 41769
+
+# taking path: 20@1 -> 13@0 	1 650291 435235
+# taking path:  13@0 -> done 	0 5101 1790
+
+# 20@1 [1.7836]		1 650291 435235
+#   13@0 [1.7609]		0 5101 1790
+
+# taking path: 22@1 -> loop (#1) 	1 4163899 3919238
+# taking path: 22@1 -> loop (#2) 	1 4163899 3919238
+# taking path:   22@1 -> 14@0 	1 4163899 3919238
+# taking path:    14@0 -> done 	0 14327 6533
+
+# 22@1 [6.9990] try1		1 4163899 3919238
+#   22@1 [5.2659] try2		1 4163899 3919238
+#     22@1 [3.5224]		1 4163899 3919238
+#       14@0 [1.7740]		0 14327 6533
+
+Waiting for child to finish
+ok, done
+--- Final reconstruction (from 6 relations) ---
+command line:
+/home/mao/loria/cado-nfs/build/hp/filter/sm_simple -poly /opt/tmp/work20827/p30.poly -inp /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.relsforSM -out /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.SM -ell 101538509534246169632617439
+# (6ba5cc7d0+) /home/mao/loria/cado-nfs/build/hp/filter/sm_simple -poly /opt/tmp/work20827/p30.poly -inp /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.relsforSM -out /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.SM -ell 101538509534246169632617439
+# List of modified files in working directory and their SHA1 sum:
+# M misc/CMakeLists.txt b9f4cf5cdb18e5b1d53d7ecb80a1741d0c8390be
+# D parameters/dlp/Joux-Lercier/params.p30
+# D parameters/dlp/Joux-Lercier/params.p70
+# M parameters/dlp/params.p100 d5bd10bba469804d451d23bd361d169ef3fbcb74
+# M parameters/dlp/params.p30 42856da91bc884b7af04ccfcf6ffa09e7bdfadb7
+# M parameters/dlp/params.p40 51b0b97dcbcf4beee4b778c102b23430c1d7b686
+# M parameters/dlp/params.p70 20ee948de9d8213821037530a8ff6f4907a0332f
+# Compiled with gcc 7.4.0
+# Compilation flags (C) -std=c99 -g -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mavx2 -mpclmul
+# Compilation flags (C++) -std=c++11 -Wno-c++11-compat -g -W -Wall -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mavx2 -mpclmul
+
+# Polynomial on side 0:
+F[0] = 660216529+2980177881*x+3558231725*x^2
+# SM info on side 0:
+# unit rank is 0, no SMs to compute
+
+# Polynomial on side 1:
+F[1] = 3+2*x+2*x^3
+# SM info on side 1:
+# unit rank is 1
+# lifted factors of f modulo ell^2
+# factor 0 (used=1), exponent ell^1-1=101538509534246169632617438:
+# 4078527340407495136010212211187051567074832904401321+x
+# factor 1 (used=0), exponent ell^2-1=10310068918436200292333074814040349856887206126918720:
+# 8019856567643580562319175183007044883124060811962901+6231541578028705156322862602853298289812373222517400*x+x^2
+
+# sm completed in 0.00 seconds
+Deduced log of (14327, 6533, 0) from rel: 94797985228667816414364789
+Deduced log of (4163899, 3919238, 1) from rel: 34380974718381136857098737
+Deduced log of (5101, 1790, 0) from rel: 9201308934061421328501163
+Deduced log of (650291, 435235, 1) from rel: 56499764459244045306161165
+Deduced log of (119687, 41769, 1) from rel: 77615633920014924295611647
+Deduced log of (56249, 4303, 1) from rel: 19784219088919772355770800
+command line:
+/home/mao/loria/cado-nfs/build/hp/filter/sm_simple -poly /opt/tmp/work20827/p30.poly -inp /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.polyforSM -out /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.SM2 -ell 101538509534246169632617439
+# (6ba5cc7d0+) /home/mao/loria/cado-nfs/build/hp/filter/sm_simple -poly /opt/tmp/work20827/p30.poly -inp /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.polyforSM -out /tmp/tmpd0wu4i2o/p30.descent.9280060983...0691138186.lower.SM2 -ell 101538509534246169632617439
+# List of modified files in working directory and their SHA1 sum:
+# M misc/CMakeLists.txt b9f4cf5cdb18e5b1d53d7ecb80a1741d0c8390be
+# D parameters/dlp/Joux-Lercier/params.p30
+# D parameters/dlp/Joux-Lercier/params.p70
+# M parameters/dlp/params.p100 d5bd10bba469804d451d23bd361d169ef3fbcb74
+# M parameters/dlp/params.p30 42856da91bc884b7af04ccfcf6ffa09e7bdfadb7
+# M parameters/dlp/params.p40 51b0b97dcbcf4beee4b778c102b23430c1d7b686
+# M parameters/dlp/params.p70 20ee948de9d8213821037530a8ff6f4907a0332f
+# Compiled with gcc 7.4.0
+# Compilation flags (C) -std=c99 -g -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mavx2 -mpclmul
+# Compilation flags (C++) -std=c++11 -Wno-c++11-compat -g -W -Wall -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mavx2 -mpclmul
+
+# Polynomial on side 0:
+F[0] = 660216529+2980177881*x+3558231725*x^2
+# SM info on side 0:
+# unit rank is 0, no SMs to compute
+
+# Polynomial on side 1:
+F[1] = 3+2*x+2*x^3
+# SM info on side 1:
+# unit rank is 1
+# lifted factors of f modulo ell^2
+# factor 0 (used=1), exponent ell^1-1=101538509534246169632617438:
+# 4078527340407495136010212211187051567074832904401321+x
+# factor 1 (used=0), exponent ell^2-1=10310068918436200292333074814040349856887206126918720:
+# 8019856567643580562319175183007044883124060811962901+6231541578028705156322862602853298289812373222517400*x+x^2
+
+# sm completed in 0.00 seconds
+# p=191907783019725260605646959711
+# ell=101538509534246169632617439
+# target=92800609832959449330691138186
+log(target)=98645762035686619261014538
